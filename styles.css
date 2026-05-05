@@ -1,0 +1,233 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+body{
+color:white ;
+font-family: "Source Sans 3";
+
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+   
+    
+}
+ .left_section{
+    background-image: url(./images/dark-ribs.jpg);
+    background-repeat: no-repeat;
+    background-size:cover ;
+    background-position: center;
+     width: 70%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+ }
+ .rectangle{
+  height: 0.5em ;  
+  width:20% ;
+  background:linear-gradient(to right,#FF713B,#FFA51D);
+ }
+ 
+ .slogan{
+   display: flex;
+   flex-direction: column;
+   align-items:center;
+   justify-content: center;
+ }
+ .slogan p{
+    color:#F18119 ;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size:1.125rem ;
+    
+ }
+ .left_section_content{
+    margin: 15em auto ;
+    display: block;
+    width:100% ;
+    line-height: 1.2;
+    text-align: center;
+    max-width: 500px;
+    
+ }
+ h1{
+    font-size: 4rem;
+    font-weight: 100;
+    text-align: center;
+ }
+ h1 span{
+    font-weight: 900;
+ }
+.left_section h2{
+    text-align: center;
+    color:#F18119 ;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding-top:0.3em ;
+     
+}
+.right_section{
+    width: 30%;
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+    min-height: 100vh;
+    background-color: black;
+     
+   
+    
+}
+.right_section h2{
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #404040;
+
+}
+.right_section p {
+    font-size:1.125rem ;
+    line-height: 1.23;
+    margin-top: 1.5em;
+    color: #404040;
+    text-align: center;
+}
+.right_section_content{
+  padding: 0 3em ;
+    line-height: 1.2;
+    width:100%;
+    max-width: 800px;
+    
+  
+}
+h3{
+  color:#F18119 ;   
+  font-size:1.5rem ;
+  font-weight: 900;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em; 
+}
+input{
+    padding:0.5em 5em ;
+    border-radius:10px ;
+   text-align: center;
+    font-size: 1.2rem;
+    gap:10px ;
+    border:1px solid #404040 ;
+    outline:none ;
+    width: 100%;
+}
+.email{
+    margin-top:0.5em ;
+}
+
+.btn{
+ padding:0.5em 2em ;
+  font-size: 1.125rem;
+  margin-top:1.5rem ;
+  border-radius: 10px;
+  border:none ;
+  width: 100%;
+}
+.register{
+color: white;
+background:linear-gradient(to right, #FF713B,#FFA51D);
+text-align: center;
+width: 100%;
+}
+
+.register:hover{
+    background-color: #f14f93;
+}
+.register:focus{
+    color:black ;
+    
+}
+
+@media screen and ( max-width: 480px){
+  .slogan p{
+    font-size: 0.9rem;
+  }
+  .rectangle{
+    width: 60%;
+  }
+    .left_section_content {
+    padding: 4em 1em 0 1em;
+    margin-bottom:0 ;
+  }
+  .left_section_content h1 {
+    font-size: 2.15rem;
+
+  }
+  .left_section_content h2 {
+    font-size: 0.2rem;
+    font-weight:bold;
+    padding-top: 4em;
+  }
+  .right_section_content {
+    padding:0 ;
+  }
+
+}
+    
+
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+   
+  }
+ 
+  .left_section {
+    width: 100%;
+  }
+ 
+  .left_section_content {
+    margin: 3em auto;
+  }
+ 
+  h1 {
+    font-size: 2.5rem;   
+  }
+ 
+  .left_section h2 {
+    font-size: 1.3rem;
+  }
+ 
+  .right_section {
+    width: 100%;
+  }
+ 
+  .right_section_content {
+    width: 100%;
+    padding: 2.5em 1.5em;
+  }
+  .rectangle{
+    width: 55%;
+  }
+ 
+  .right_section h2 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  .right_section h3{
+    text-align: center;
+  }
+  @media screen and (max-width: 900px) {
+.container {
+    max-width: 1440px;
+}
+
+
+  }
+
+
+}
